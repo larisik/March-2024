@@ -1,0 +1,38 @@
+body {
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+header {
+    height: 600px;
+    background-color: darkblue;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 30%;
+    height: 600px;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 800px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
