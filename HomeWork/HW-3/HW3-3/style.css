@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+.box-section {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+h2 {
+    margin-bottom: 25px;
+}
+
+p {
+    max-width: 80%;
+    text-align: center;
+}
