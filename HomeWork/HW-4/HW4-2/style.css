@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid darkgrey;
+    padding: 35px;
+    margin-bottom: 20px;
+}
+
+.img-insta {
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+input {
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: rgba(211, 211, 211, 0.2);
+}
+
+.login-form-facebook {
+    margin: 15px 0 15px;
+
+
+}
+
+.login-form-facebook-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: darkblue;
+}
+
+.login-form-reset-pass {
+    text-decoration: none;
+    font-size: 12px;
+    color: darkblue;
+}
+
+
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+form img {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+.signin-form {
+    width: 100%;
+    border: 1px solid darkgrey;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.signin-form-text {
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.signin-form-link {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: dodgerblue;
+
+}

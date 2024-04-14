@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        sup{
+            color: red;
+            display: inline-block;
+
+        }
+        label{
+            display: block;
+            margin-top: 15px;
+        }
+        .margin-0{
+            margin: 0;
+        }
+        textarea{
+            resize: none;
+        }
+
+        input[type="text"]{
+            width: 200px;
+            height: 50px;
+            background-color: rgba(156, 171, 156, 0.69);
+            text-align: center;
+            border: 2px solid orange;
+            border-radius: 3px;
+            color: pink;
+        }
+        input[type="text"]::placeholder{
+            color: coral;
+        }
+
+        input[type="text"]:focus{
+            outline: none;
+            border: 2px solid #916c6a;
+        }
+        input[type="checkbox"]{
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid orangered;
+            border-radius: 2px;
+            margin-bottom: 0;
+        }
+        input[type="checkbox"]:checked{
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnklEQVR4nO2ZS2gTQQCGp4IHFTwI3rx48yBBjN3sJtukaUowqW1K47M+i6ggeOg1lkZQRL3sUgQfJy/eBUEonhQP2TVUlEI0xNjsJsaGqqFpk9m1zchsjPUi2kyZSWA/GMiGCf988y9DYACwsWGDrMCErBpoI4akQJXq4hFCXbIKFzdMQIW1B0m0mZrAVKK2uxmeKpnINE308SuxyF5qArICDzWDC+WGwJuiSdZCwjhBT+A1HG8GV6oNgZc5QgEFXqUmICmGjEPvzRjW4vF4miZ9heBDmgJPcOjj2TUB/JlIQDGe0xNQYRKH4l1vCuA2CE+it9QEsn2BlYLQjcqnjiJ05xpCt+MIP5OMbCCwQk1gzuet49DFsVFLoH5zglhgzuetUxPQPbwVunTpnCWwej1GLKB7eES9gcrFMw2BG7HOauBDeHAZh34/PtJ4hW5NEgtkQgOQmsC7Y2df4NCiT7QWjyW++HuIBGYPn0xTE/gUDA43g5cvn7cEFiIhIoH3w0cmqQkgADZl+/waDp7v77VOIXwitbp4TXT/+Czu2wloUhC43y2UR6PIjI23LJDze+8CFuhu1yNrEe5uVL1yAZXC/S3svkdf4LjtTASKDsc2zSO8akhw6Ft0aL1n/1KBd+4HLCk4nVvzbu7Zenc+L/LzusvlAO0AAqArLxwY00Sh8s9dd3Ormle8r/H8DtBuaDy/Jev3n05FRmYywYM1vceDcr1elB4YrKYi0XQmPDShc9wu0CnIv/4qg05FtgUYYzfAGrsB1tgNsMZugDV2A6yxG2CJpJjC2uWFKYBOQlJhSFJg6Y/blxL+DrQzCN9cKrWApBrTf78DMKbxHDwXtAtTSbhHVmFcUo3s/19m4Lkwjn/bNidNqwPY2ACm/AQ2j8mLrb0ljAAAAABJRU5ErkJggg==);
+            background-size: cover;
+        }
+
+        input[type="radio"]{
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid orangered;
+            border-radius: 50%;
+        }
+        input[type="radio"]:checked{
+            background: rgb(255,134,0);
+            background: radial-gradient(circle, rgba(255,134,0,1) 0%, rgba(255,195,128,1) 36%, rgba(255,255,255,1) 37%);
+        }
+        input[type="reset"]{
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <label for="name">Введіть своє ім'я:</label>
+    <input type="text" name="username" id="name" placeholder="Anna Ivanova" required> <sup>*</sup>
+
+    <label for="email">Введіть свій email</label>
+    <input type="email" name="email" id="email" placeholder="example@x.com" required> <sup>*</sup>
+
+    <label for="password">Введіть свій пароль</label>
+    <input type="password" name="password" id="password" placeholder="qwerty123" required> <sup>*</sup>
+
+    <label>Стать:</label>
+    <label class="margin-0"><input type="radio" name="gender" value="male"> Чоловіча</label>
+    <label class="margin-0"><input type="radio" name="gender" value="female"> Жіноча</label>
+
+    <label> <input type="checkbox" name="news"> Підписка на новини</label>
+    <label class="margin-0"> <input type="checkbox" name="news"> Відписатись від новин</label>
+
+    <label for="age">Введіть свій вік</label>
+    <input type="number" name="age" id="age" min="18" max="1000" >
+
+    <label for="comment">Введіть свій коментар</label>
+    <textarea name="comment" id="comment" rows="4" cols="30"></textarea>
+    <div>
+        <input type="submit" value="Зареєструватись">
+        <input type="reset" value="Відмінити реєстрацію">
+    </div>
+</form>
+</body>
+</html>
